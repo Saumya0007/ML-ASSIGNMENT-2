@@ -1,0 +1,4 @@
+model,configuration,validation_accuracy,clean_test_accuracy,corrupted_test_accuracy
+Decision tree,"depth=None, min_leaf=4",0.6125,0.625,0.225
+Bagging,trees=200,0.8625,0.825,0.6625
+Boosting (SAMME),learners=100,0.8875,0.8125,0.5875

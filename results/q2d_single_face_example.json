@@ -1,0 +1,42 @@
+{
+  "seed": 26007,
+  "selected_test_position": 1,
+  "selected_global_dataset_index": 2,
+  "true_identity_label": 0,
+  "selection_rule": "one ensemble changes its prediction under masking while the other does not",
+  "bagging": {
+    "trees": 200,
+    "clean_prediction": 15,
+    "masked_prediction": 26,
+    "clean_winning_vote_fraction": 0.2,
+    "masked_winning_vote_fraction": 0.115,
+    "prediction_changed_by_mask": true,
+    "tree_prediction_flip_fraction_under_mask": 0.535,
+    "clean_vote_disagreement": 0.8,
+    "masked_vote_disagreement": 0.885
+  },
+  "samme": {
+    "depth": 4,
+    "rounds_accepted": 100,
+    "clean_prediction": 12,
+    "masked_prediction": 12,
+    "clean_normalized_winning_score": 0.11032823090985537,
+    "masked_normalized_winning_score": 0.13919498855367388,
+    "prediction_changed_by_mask": false,
+    "confidence_note": "Normalized winning weighted-vote score, not a calibrated probability."
+  },
+  "highest_final_samme_training_weight": {
+    "global_dataset_index": 219,
+    "identity_label": 21,
+    "weight": 0.06696669628886905,
+    "note": "This is a training face, not the selected test face."
+  },
+  "test_accuracies": {
+    "single_tree_clean": 0.625,
+    "single_tree_masked": 0.225,
+    "bagging_200_clean": 0.825,
+    "bagging_200_masked": 0.6625,
+    "samme_clean": 0.45,
+    "samme_masked": 0.2
+  }
+}

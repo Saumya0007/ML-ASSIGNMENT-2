@@ -1,0 +1,26 @@
+{
+  "seed": 26007,
+  "depths_searched": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "round_checkpoints": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "min_samples_leaf": 1,
+  "selection_metric": "clean_validation_accuracy",
+  "tie_break": "fewer rounds, then shallower depth",
+  "selected_depth": 4,
+  "selected_rounds": 100,
+  "selected_clean_validation_accuracy": 0.4375,
+  "grid_results_csv": "results/samme_q2b_grid.csv",
+  "all_round_dynamics_csv": "results/samme_q2b_all_round_dynamics.csv",
+  "selected_dynamics_plot": "results/figures/q2b_samme_selected_dynamics.png",
+  "elapsed_seconds": 131.98087739999755,
+  "notes": "Weighted training error is the weak learner's weighted error epsilon_t before the round's sample-weight update. Alpha and sample-weight traces are recorded after fitting each weak learner; sample weights are normalized after every update."
+}

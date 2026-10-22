@@ -1,0 +1,4 @@
+model,configuration,training_seconds,validation_accuracy,clean_test_accuracy,masked_test_accuracy,mean_clean_winning_score,mean_masked_winning_score
+Decision tree,"depth=None, min_leaf=4",1.559465900005307,0.6125,0.625,0.225,0.9533928571428572,1.0
+Bagging,"trees=175, depth=None, min_leaf=4",246.27565850000246,0.875,0.8125,0.6375,0.3966428571428572,0.2357142857142857
+SAMME,"depth=4, rounds=100, min_leaf=1",44.24805990001187,0.425,0.4125,0.1625,0.11909858396505624,0.13230688107133193

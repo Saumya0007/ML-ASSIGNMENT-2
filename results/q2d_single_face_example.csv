@@ -1,0 +1,2 @@
+global_dataset_index,true_identity_label,bagging_clean,bagging_masked,bagging_vote_clean,bagging_vote_masked,samme_clean,samme_masked,samme_score_clean,samme_score_masked,bagging_tree_flip_fraction,selection_rule
+2,0,15,26,0.200000,0.115000,12,12,0.110328,0.139195,0.535000,one ensemble changes its prediction under masking while the other does not

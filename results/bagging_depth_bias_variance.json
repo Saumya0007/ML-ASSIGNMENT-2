@@ -1,0 +1,966 @@
+{
+  "seed": 26007,
+  "n_resamples": 30,
+  "n_trees": 100,
+  "test_set_fixed": true,
+  "resampling": "six draws with replacement per identity",
+  "selected_q1_max_depth_parameter": null,
+  "selected_tree_observed_depth": 32,
+  "depth_caps": {
+    "shallower": 16,
+    "selected_effective_depth": 32,
+    "much_deeper": 64
+  },
+  "depth_interpretation": "Q1 selected max_depth=None. The observed depth of that tree fitted on the original training split is used as the middle depth cap. The other settings use a shallower and a much deeper cap.",
+  "bias_variance_definition": "Bias squared is mean squared Euclidean distance between the mean normalized vote vector and one-hot target. Variance is mean squared Euclidean deviation of each resample's vote vector from the per-test-example mean.",
+  "tree_disagreement_definition": "Mean over fixed test images of one minus the sum of squared class prediction fractions across individual trees.",
+  "summary": {
+    "shallower": {
+      "max_depth": 16,
+      "depth_interpretation": "shallower",
+      "min_samples_leaf": 4,
+      "n_trees": 100,
+      "n_resamples": 30,
+      "bias_squared": 0.674773633480072,
+      "variance": 0.021504614502191544,
+      "mean_test_accuracy": 0.6108333333333333,
+      "std_test_accuracy": 0.0495535624910617,
+      "mean_leaf_count_per_tree": 21.107999999999993,
+      "mean_singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.465031482388781,
+      "mean_tree_disagreement": 0.8744050800800324
+    },
+    "selected_effective_depth": {
+      "max_depth": 32,
+      "depth_interpretation": "selected_effective_depth",
+      "min_samples_leaf": 4,
+      "n_trees": 100,
+      "n_resamples": 30,
+      "bias_squared": 0.5258409976959229,
+      "variance": 0.025286251679062843,
+      "mean_test_accuracy": 0.7383333333333333,
+      "std_test_accuracy": 0.04207301853788113,
+      "mean_leaf_count_per_tree": 38.32066666666667,
+      "mean_singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.27471253674049,
+      "mean_tree_disagreement": 0.8090310831864674
+    },
+    "much_deeper": {
+      "max_depth": 64,
+      "depth_interpretation": "much_deeper",
+      "min_samples_leaf": 4,
+      "n_trees": 100,
+      "n_resamples": 30,
+      "bias_squared": 0.5214852094650269,
+      "variance": 0.025536401197314262,
+      "mean_test_accuracy": 0.7412500000000001,
+      "std_test_accuracy": 0.04391635040999347,
+      "mean_leaf_count_per_tree": 39.41166666666666,
+      "mean_singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.098507310139262,
+      "mean_tree_disagreement": 0.8060200035572052
+    }
+  },
+  "per_resample": [
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 1,
+      "test_accuracy": 0.625,
+      "mean_leaf_count_per_tree": 21.07,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.469768040726713,
+      "tree_disagreement": 0.867650032043457
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 2,
+      "test_accuracy": 0.5875,
+      "mean_leaf_count_per_tree": 20.77,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.651671007325334,
+      "tree_disagreement": 0.874470055103302
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 3,
+      "test_accuracy": 0.5375,
+      "mean_leaf_count_per_tree": 20.64,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.73706300902101,
+      "tree_disagreement": 0.8650225400924683
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 4,
+      "test_accuracy": 0.6,
+      "mean_leaf_count_per_tree": 21.35,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.314962940949213,
+      "tree_disagreement": 0.8763900995254517
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 5,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 20.72,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.706804673467747,
+      "tree_disagreement": 0.8723775744438171
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 6,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 21.33,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.351970003045519,
+      "tree_disagreement": 0.8792799115180969
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 7,
+      "test_accuracy": 0.65,
+      "mean_leaf_count_per_tree": 20.58,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.744171638654342,
+      "tree_disagreement": 0.8863524198532104
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 8,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 21.34,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.32863518934215,
+      "tree_disagreement": 0.8655775189399719
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 9,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 21.7,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.152704122937216,
+      "tree_disagreement": 0.8794574737548828
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 10,
+      "test_accuracy": 0.625,
+      "mean_leaf_count_per_tree": 21.55,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.232421524542675,
+      "tree_disagreement": 0.8788849711418152
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 11,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 21.22,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.395513691495387,
+      "tree_disagreement": 0.8851175308227539
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 12,
+      "test_accuracy": 0.6125,
+      "mean_leaf_count_per_tree": 20.38,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.871448289674161,
+      "tree_disagreement": 0.8746749758720398
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 13,
+      "test_accuracy": 0.675,
+      "mean_leaf_count_per_tree": 22.08,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 10.97867430937422,
+      "tree_disagreement": 0.8732675313949585
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 14,
+      "test_accuracy": 0.65,
+      "mean_leaf_count_per_tree": 20.94,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.535186395035101,
+      "tree_disagreement": 0.8859199285507202
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 15,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 20.97,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.523291215716574,
+      "tree_disagreement": 0.8710300326347351
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 16,
+      "test_accuracy": 0.675,
+      "mean_leaf_count_per_tree": 21.53,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.259043357862579,
+      "tree_disagreement": 0.8765875101089478
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 17,
+      "test_accuracy": 0.5875,
+      "mean_leaf_count_per_tree": 20.78,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.638842395336674,
+      "tree_disagreement": 0.8615500330924988
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 18,
+      "test_accuracy": 0.5875,
+      "mean_leaf_count_per_tree": 21.37,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.334531762131169,
+      "tree_disagreement": 0.8781000375747681
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 19,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 21.82,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.093838934490973,
+      "tree_disagreement": 0.8777225613594055
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 20,
+      "test_accuracy": 0.5,
+      "mean_leaf_count_per_tree": 20.64,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.707217502020569,
+      "tree_disagreement": 0.8681474924087524
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 21,
+      "test_accuracy": 0.6,
+      "mean_leaf_count_per_tree": 21.04,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.503122010906639,
+      "tree_disagreement": 0.8772850036621094
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 22,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 21.34,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.339220559222714,
+      "tree_disagreement": 0.8742074966430664
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 23,
+      "test_accuracy": 0.6,
+      "mean_leaf_count_per_tree": 21.47,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.256173842610462,
+      "tree_disagreement": 0.8731800317764282
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 24,
+      "test_accuracy": 0.65,
+      "mean_leaf_count_per_tree": 21.27,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.36297787948131,
+      "tree_disagreement": 0.8652949333190918
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 25,
+      "test_accuracy": 0.6,
+      "mean_leaf_count_per_tree": 20.89,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.578482553745443,
+      "tree_disagreement": 0.8639124631881714
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 26,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 20.93,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.564680035359261,
+      "tree_disagreement": 0.8753499984741211
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 27,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 21.17,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.421548995088909,
+      "tree_disagreement": 0.8765748739242554
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 28,
+      "test_accuracy": 0.575,
+      "mean_leaf_count_per_tree": 20.77,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.630703596937007,
+      "tree_disagreement": 0.8785650134086609
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 29,
+      "test_accuracy": 0.6125,
+      "mean_leaf_count_per_tree": 20.92,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.580617615255925,
+      "tree_disagreement": 0.8790023922920227
+    },
+    {
+      "depth_setting": "shallower",
+      "max_depth": 16,
+      "resample": 30,
+      "test_accuracy": 0.55,
+      "mean_leaf_count_per_tree": 20.66,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 11.685657379906404,
+      "tree_disagreement": 0.8711999654769897
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 1,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 38.47,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.248849364004541,
+      "tree_disagreement": 0.7957425117492676
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 2,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 38.2,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.294757867833455,
+      "tree_disagreement": 0.8178424835205078
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 3,
+      "test_accuracy": 0.675,
+      "mean_leaf_count_per_tree": 37.79,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.363804868308554,
+      "tree_disagreement": 0.8216449618339539
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 4,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 38.28,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.278946705504307,
+      "tree_disagreement": 0.8013925552368164
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 5,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 38.0,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.326875256279469,
+      "tree_disagreement": 0.8072799444198608
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 6,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 38.28,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.280967453840845,
+      "tree_disagreement": 0.8100200891494751
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 7,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 38.02,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.325205556627439,
+      "tree_disagreement": 0.8258973956108093
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 8,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 38.5,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.242125927363411,
+      "tree_disagreement": 0.7972350120544434
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 9,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 38.45,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.254124877213301,
+      "tree_disagreement": 0.8012499809265137
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 10,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 38.83,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.191905725490614,
+      "tree_disagreement": 0.8078800439834595
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 11,
+      "test_accuracy": 0.675,
+      "mean_leaf_count_per_tree": 38.41,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.263303671827596,
+      "tree_disagreement": 0.8224000930786133
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 12,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 37.43,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.425159232997336,
+      "tree_disagreement": 0.796720027923584
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 13,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 39.16,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.139240805695714,
+      "tree_disagreement": 0.801562488079071
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 14,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 38.21,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.294374107449694,
+      "tree_disagreement": 0.8246374130249023
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 15,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 38.35,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.271686501560396,
+      "tree_disagreement": 0.8046099543571472
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 16,
+      "test_accuracy": 0.7875,
+      "mean_leaf_count_per_tree": 38.63,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.224114872194788,
+      "tree_disagreement": 0.8075200319290161
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 17,
+      "test_accuracy": 0.75,
+      "mean_leaf_count_per_tree": 38.07,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.314969203852387,
+      "tree_disagreement": 0.8007000088691711
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 18,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 38.41,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.260660221639203,
+      "tree_disagreement": 0.8176825642585754
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 19,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 39.11,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.149036976181882,
+      "tree_disagreement": 0.8077999949455261
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 20,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 38.31,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.274114051418287,
+      "tree_disagreement": 0.8057249784469604
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 21,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 38.17,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.298735112298504,
+      "tree_disagreement": 0.8177175521850586
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 22,
+      "test_accuracy": 0.75,
+      "mean_leaf_count_per_tree": 38.55,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.236798805073366,
+      "tree_disagreement": 0.8181825876235962
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 23,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 38.5,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.243547779748037,
+      "tree_disagreement": 0.8062549829483032
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 24,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 38.31,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.276858938641187,
+      "tree_disagreement": 0.7888599634170532
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 25,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 37.97,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.332137997331684,
+      "tree_disagreement": 0.8080524206161499
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 26,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 38.31,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.274063463511474,
+      "tree_disagreement": 0.805507481098175
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 27,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 38.23,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.288989827823928,
+      "tree_disagreement": 0.80975741147995
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 28,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 38.3,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.275326873126465,
+      "tree_disagreement": 0.8119850158691406
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 29,
+      "test_accuracy": 0.7875,
+      "mean_leaf_count_per_tree": 38.23,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.287771587162966,
+      "tree_disagreement": 0.8220149874687195
+    },
+    {
+      "depth_setting": "selected_effective_depth",
+      "max_depth": 32,
+      "resample": 30,
+      "test_accuracy": 0.6375,
+      "mean_leaf_count_per_tree": 38.14,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.302922470213869,
+      "tree_disagreement": 0.8070575594902039
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 1,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 39.19,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.132930460119163,
+      "tree_disagreement": 0.7934800386428833
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 2,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 39.38,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.102895718603991,
+      "tree_disagreement": 0.8164274096488953
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 3,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 39.15,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.138029350436433,
+      "tree_disagreement": 0.8180000185966492
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 4,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 39.2,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.13009059128234,
+      "tree_disagreement": 0.7968550324440002
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 5,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 38.94,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.171937434479155,
+      "tree_disagreement": 0.8039625287055969
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 6,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 39.07,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.152791972762119,
+      "tree_disagreement": 0.8085525631904602
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 7,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 39.23,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.12720933256026,
+      "tree_disagreement": 0.8223375082015991
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 8,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 39.73,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.048525349030468,
+      "tree_disagreement": 0.7940925359725952
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 9,
+      "test_accuracy": 0.825,
+      "mean_leaf_count_per_tree": 39.5,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.0840489855338955,
+      "tree_disagreement": 0.7973250150680542
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 10,
+      "test_accuracy": 0.7375,
+      "mean_leaf_count_per_tree": 39.73,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.049251994506793,
+      "tree_disagreement": 0.8046125173568726
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 11,
+      "test_accuracy": 0.675,
+      "mean_leaf_count_per_tree": 39.63,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.065652045174988,
+      "tree_disagreement": 0.820094883441925
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 12,
+      "test_accuracy": 0.75,
+      "mean_leaf_count_per_tree": 38.9,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.1783322613617875,
+      "tree_disagreement": 0.7917749881744385
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 13,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 40.01,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.009482154219296,
+      "tree_disagreement": 0.7995299696922302
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 14,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 39.37,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.104324912155464,
+      "tree_disagreement": 0.8228899836540222
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 15,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 39.56,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.07633371546737,
+      "tree_disagreement": 0.8005124926567078
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 16,
+      "test_accuracy": 0.7875,
+      "mean_leaf_count_per_tree": 39.6,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.069265149990588,
+      "tree_disagreement": 0.8056625127792358
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 17,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 39.1,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.147167701211347,
+      "tree_disagreement": 0.7975749969482422
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 18,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 39.59,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.070348832398568,
+      "tree_disagreement": 0.8141075372695923
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 19,
+      "test_accuracy": 0.8125,
+      "mean_leaf_count_per_tree": 40.11,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 5.993003718743126,
+      "tree_disagreement": 0.8053575754165649
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 20,
+      "test_accuracy": 0.6875,
+      "mean_leaf_count_per_tree": 39.47,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.08706102002636,
+      "tree_disagreement": 0.8009424209594727
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 21,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 39.43,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.094807513108854,
+      "tree_disagreement": 0.8154300451278687
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 22,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 39.69,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.05615848145806,
+      "tree_disagreement": 0.8159074783325195
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 23,
+      "test_accuracy": 0.7,
+      "mean_leaf_count_per_tree": 39.52,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.080091672785346,
+      "tree_disagreement": 0.8043575286865234
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 24,
+      "test_accuracy": 0.7125,
+      "mean_leaf_count_per_tree": 39.51,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.083185990961016,
+      "tree_disagreement": 0.7843450307846069
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 25,
+      "test_accuracy": 0.7625,
+      "mean_leaf_count_per_tree": 39.23,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.127348815149515,
+      "tree_disagreement": 0.8056100606918335
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 26,
+      "test_accuracy": 0.725,
+      "mean_leaf_count_per_tree": 39.29,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.116088225701027,
+      "tree_disagreement": 0.8033624887466431
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 27,
+      "test_accuracy": 0.775,
+      "mean_leaf_count_per_tree": 39.24,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.123800511333723,
+      "tree_disagreement": 0.8065600395202637
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 28,
+      "test_accuracy": 0.7875,
+      "mean_leaf_count_per_tree": 39.47,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.090392856557974,
+      "tree_disagreement": 0.808009922504425
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 29,
+      "test_accuracy": 0.8,
+      "mean_leaf_count_per_tree": 39.24,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.124299471832684,
+      "tree_disagreement": 0.8185224533081055
+    },
+    {
+      "depth_setting": "much_deeper",
+      "max_depth": 64,
+      "resample": 30,
+      "test_accuracy": 0.65,
+      "mean_leaf_count_per_tree": 39.27,
+      "singleton_leaf_fraction": 0.0,
+      "mean_samples_per_leaf": 6.120363065226187,
+      "tree_disagreement": 0.8044025301933289
+    }
+  ]
+}

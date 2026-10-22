@@ -1,0 +1,324 @@
+{
+  "seed": 26007,
+  "trace_sample_count": 10,
+  "selected_training_positions": [
+    3,
+    10,
+    14,
+    20,
+    24,
+    34,
+    36,
+    43,
+    51,
+    54
+  ],
+  "max_depth": 1,
+  "n_classes": 40,
+  "rounds_completed": 3,
+  "round_trace": [
+    {
+      "round": 1,
+      "max_depth": 1,
+      "weighted_error": 0.8,
+      "misclassified_count": 8,
+      "learner_weight_alpha": 2.2772672850097555,
+      "weight_sum_before": 1.0,
+      "weight_sum_after": 0.9999999999999999,
+      "samples": [
+        {
+          "sample_number": 1,
+          "training_position": 3,
+          "true_label": 0,
+          "predicted_label": 0,
+          "correct": true,
+          "weight_before": 0.1,
+          "weight_after": 0.012500000000000004
+        },
+        {
+          "sample_number": 2,
+          "training_position": 10,
+          "true_label": 1,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 3,
+          "training_position": 14,
+          "true_label": 2,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 4,
+          "training_position": 20,
+          "true_label": 3,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 5,
+          "training_position": 24,
+          "true_label": 4,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 6,
+          "training_position": 34,
+          "true_label": 5,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 7,
+          "training_position": 36,
+          "true_label": 6,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 8,
+          "training_position": 43,
+          "true_label": 7,
+          "predicted_label": 7,
+          "correct": true,
+          "weight_before": 0.1,
+          "weight_after": 0.012500000000000004
+        },
+        {
+          "sample_number": 9,
+          "training_position": 51,
+          "true_label": 8,
+          "predicted_label": 0,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        },
+        {
+          "sample_number": 10,
+          "training_position": 54,
+          "true_label": 9,
+          "predicted_label": 7,
+          "correct": false,
+          "weight_before": 0.1,
+          "weight_after": 0.121875
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "max_depth": 1,
+      "weighted_error": 0.7562499999999999,
+      "misclassified_count": 8,
+      "learner_weight_alpha": 2.531332746662552,
+      "weight_sum_before": 0.9999999999999999,
+      "weight_sum_after": 1.0000000000000002,
+      "samples": [
+        {
+          "sample_number": 1,
+          "training_position": 3,
+          "true_label": 0,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.012500000000000004,
+          "weight_after": 0.016115702479338852
+        },
+        {
+          "sample_number": 2,
+          "training_position": 10,
+          "true_label": 1,
+          "predicted_label": 1,
+          "correct": true,
+          "weight_before": 0.121875,
+          "weight_after": 0.012499999999999997
+        },
+        {
+          "sample_number": 3,
+          "training_position": 14,
+          "true_label": 2,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        },
+        {
+          "sample_number": 4,
+          "training_position": 20,
+          "true_label": 3,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        },
+        {
+          "sample_number": 5,
+          "training_position": 24,
+          "true_label": 4,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        },
+        {
+          "sample_number": 6,
+          "training_position": 34,
+          "true_label": 5,
+          "predicted_label": 5,
+          "correct": true,
+          "weight_before": 0.121875,
+          "weight_after": 0.012499999999999997
+        },
+        {
+          "sample_number": 7,
+          "training_position": 36,
+          "true_label": 6,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        },
+        {
+          "sample_number": 8,
+          "training_position": 43,
+          "true_label": 7,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.012500000000000004,
+          "weight_after": 0.016115702479338852
+        },
+        {
+          "sample_number": 9,
+          "training_position": 51,
+          "true_label": 8,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        },
+        {
+          "sample_number": 10,
+          "training_position": 54,
+          "true_label": 9,
+          "predicted_label": 1,
+          "correct": false,
+          "weight_before": 0.121875,
+          "weight_after": 0.15712809917355375
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "max_depth": 1,
+      "weighted_error": 0.6857438016528927,
+      "misclassified_count": 8,
+      "learner_weight_alpha": 2.8832661266689636,
+      "weight_sum_before": 1.0000000000000002,
+      "weight_sum_after": 1.0,
+      "samples": [
+        {
+          "sample_number": 1,
+          "training_position": 3,
+          "true_label": 0,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.016115702479338852,
+          "weight_after": 0.02291352817113589
+        },
+        {
+          "sample_number": 2,
+          "training_position": 10,
+          "true_label": 1,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.012499999999999997,
+          "weight_after": 0.017772672491714363
+        },
+        {
+          "sample_number": 3,
+          "training_position": 14,
+          "true_label": 2,
+          "predicted_label": 2,
+          "correct": true,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.012500000000000011
+        },
+        {
+          "sample_number": 4,
+          "training_position": 20,
+          "true_label": 3,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.22340689966857485
+        },
+        {
+          "sample_number": 5,
+          "training_position": 24,
+          "true_label": 4,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.22340689966857485
+        },
+        {
+          "sample_number": 6,
+          "training_position": 34,
+          "true_label": 5,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.012499999999999997,
+          "weight_after": 0.017772672491714363
+        },
+        {
+          "sample_number": 7,
+          "training_position": 36,
+          "true_label": 6,
+          "predicted_label": 6,
+          "correct": true,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.012500000000000011
+        },
+        {
+          "sample_number": 8,
+          "training_position": 43,
+          "true_label": 7,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.016115702479338852,
+          "weight_after": 0.02291352817113589
+        },
+        {
+          "sample_number": 9,
+          "training_position": 51,
+          "true_label": 8,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.22340689966857485
+        },
+        {
+          "sample_number": 10,
+          "training_position": 54,
+          "true_label": 9,
+          "predicted_label": 2,
+          "correct": false,
+          "weight_before": 0.15712809917355375,
+          "weight_after": 0.22340689966857485
+        }
+      ]
+    }
+  ]
+}

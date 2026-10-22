@@ -1,0 +1,48 @@
+{
+  "seed": 26007,
+  "max_depth": 4,
+  "min_samples_leaf": 1,
+  "accepted_rounds": 100,
+  "total_wall_time_seconds": 31.273037600010866,
+  "checkpoint_results": [
+    {
+      "model": "SAMME",
+      "learners": 25,
+      "training_seconds": 7.574974900024245,
+      "train_accuracy": 0.7333333333333333,
+      "validation_accuracy": 0.2375,
+      "clean_test_accuracy": 0.325,
+      "masked_test_accuracy": 0.225,
+      "last_weighted_error": 0.6075912526914519,
+      "last_learner_alpha": 3.226363291262295
+    },
+    {
+      "model": "SAMME",
+      "learners": 50,
+      "training_seconds": 15.275127199973213,
+      "train_accuracy": 0.9583333333333334,
+      "validation_accuracy": 0.4125,
+      "clean_test_accuracy": 0.3625,
+      "masked_test_accuracy": 0.2625,
+      "last_weighted_error": 0.6740647257422624,
+      "last_learner_alpha": 2.936934324001924
+    },
+    {
+      "model": "SAMME",
+      "learners": 100,
+      "training_seconds": 30.88007279994781,
+      "train_accuracy": 0.9958333333333333,
+      "validation_accuracy": 0.4375,
+      "clean_test_accuracy": 0.45,
+      "masked_test_accuracy": 0.2,
+      "last_weighted_error": 0.6708667604178958,
+      "last_learner_alpha": 2.9514537498659985
+    }
+  ],
+  "confidence_note": "Normalized winning weighted-vote score; not a calibrated probability.",
+  "prediction_files": [
+    "results/samme_predictions_25.npz",
+    "results/samme_predictions_50.npz",
+    "results/samme_predictions_100.npz"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "seed": 26007,
+  "split_file": "results/split.npz",
+  "depths": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "round_checkpoints": [
+    10,
+    25,
+    50,
+    100
+  ],
+  "selection_metric": "validation_accuracy",
+  "grid_results": [
+    {
+      "max_depth": 1,
+      "n_estimators": 10,
+      "actual_estimators": 10,
+      "train_accuracy": 0.05,
+      "validation_accuracy": 0.0375,
+      "clean_test_accuracy": 0.0375,
+      "corrupted_test_accuracy": 0.0375,
+      "last_learner_weight": 1.0329827675399672,
+      "last_weighted_error": 0.932803843096627
+    },
+    {
+      "max_depth": 1,
+      "n_estimators": 25,
+      "actual_estimators": 25,
+      "train_accuracy": 0.09166666666666666,
+      "validation_accuracy": 0.0875,
+      "clean_test_accuracy": 0.05,
+      "corrupted_test_accuracy": 0.05,
+      "last_learner_weight": 1.1769602325235247,
+      "last_weighted_error": 0.9231971750848664
+    },
+    {
+      "max_depth": 1,
+      "n_estimators": 50,
+      "actual_estimators": 50,
+      "train_accuracy": 0.16666666666666666,
+      "validation_accuracy": 0.1375,
+      "clean_test_accuracy": 0.075,
+      "corrupted_test_accuracy": 0.075,
+      "last_learner_weight": 1.381458715261438,
+      "last_weighted_error": 0.907383925163403
+    },
+    {
+      "max_depth": 1,
+      "n_estimators": 100,
+      "actual_estimators": 100,
+      "train_accuracy": 0.175,
+      "validation_accuracy": 0.1375,
+      "clean_test_accuracy": 0.125,
+      "corrupted_test_accuracy": 0.15,
+      "last_learner_weight": 1.2482784888054526,
+      "last_weighted_error": 0.9179853210351017
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 10,
+      "actual_estimators": 10,
+      "train_accuracy": 0.10416666666666667,
+      "validation_accuracy": 0.075,
+      "clean_test_accuracy": 0.075,
+      "corrupted_test_accuracy": 0.075,
+      "last_learner_weight": 2.0178596903885504,
+      "last_weighted_error": 0.8383093110189752
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 25,
+      "actual_estimators": 25,
+      "train_accuracy": 0.20416666666666666,
+      "validation_accuracy": 0.1375,
+      "clean_test_accuracy": 0.0625,
+      "corrupted_test_accuracy": 0.05,
+      "last_learner_weight": 2.039763934042406,
+      "last_weighted_error": 0.8353182150100185
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 50,
+      "actual_estimators": 50,
+      "train_accuracy": 0.22083333333333333,
+      "validation_accuracy": 0.0625,
+      "clean_test_accuracy": 0.1625,
+      "corrupted_test_accuracy": 0.0625,
+      "last_learner_weight": 2.211727375234086,
+      "last_weighted_error": 0.8102805695491156
+    },
+    {
+      "max_depth": 2,
+      "n_estimators": 100,
+      "actual_estimators": 100,
+      "train_accuracy": 0.3541666666666667,
+      "validation_accuracy": 0.1625,
+      "clean_test_accuracy": 0.15,
+      "corrupted_test_accuracy": 0.075,
+      "last_learner_weight": 1.9365781910285447,
+      "last_weighted_error": 0.8490261642705677
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 10,
+      "actual_estimators": 10,
+      "train_accuracy": 0.2708333333333333,
+      "validation_accuracy": 0.175,
+      "clean_test_accuracy": 0.15,
+      "corrupted_test_accuracy": 0.1125,
+      "last_learner_weight": 2.1816047723811884,
+      "last_weighted_error": 0.81486797299297
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 25,
+      "actual_estimators": 25,
+      "train_accuracy": 0.32916666666666666,
+      "validation_accuracy": 0.1375,
+      "clean_test_accuracy": 0.1125,
+      "corrupted_test_accuracy": 0.075,
+      "last_learner_weight": 2.7298981415643064,
+      "last_weighted_error": 0.7178179397150081
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 50,
+      "actual_estimators": 50,
+      "train_accuracy": 0.3875,
+      "validation_accuracy": 0.175,
+      "clean_test_accuracy": 0.1,
+      "corrupted_test_accuracy": 0.075,
+      "last_learner_weight": 2.547245447550498,
+      "last_weighted_error": 0.7533047699539813
+    },
+    {
+      "max_depth": 3,
+      "n_estimators": 100,
+      "actual_estimators": 100,
+      "train_accuracy": 0.7291666666666666,
+      "validation_accuracy": 0.3,
+      "clean_test_accuracy": 0.2125,
+      "corrupted_test_accuracy": 0.125,
+      "last_learner_weight": 2.6624372645410483,
+      "last_weighted_error": 0.7312795880267544
+    },
+    {
+      "max_depth": 4,
+      "n_estimators": 10,
+      "actual_estimators": 10,
+      "train_accuracy": 0.4,
+      "validation_accuracy": 0.225,
+      "clean_test_accuracy": 0.2,
+      "corrupted_test_accuracy": 0.2375,
+      "last_learner_weight": 3.0222961497500522,
+      "last_weighted_error": 0.6550394717415643
+    },
+    {
+      "max_depth": 4,
+      "n_estimators": 25,
+      "actual_estimators": 25,
+      "train_accuracy": 0.7333333333333333,
+      "validation_accuracy": 0.2375,
+      "clean_test_accuracy": 0.325,
+      "corrupted_test_accuracy": 0.225,
+      "last_learner_weight": 3.226363291262295,
+      "last_weighted_error": 0.6075912526914519
+    },
+    {
+      "max_depth": 4,
+      "n_estimators": 50,
+      "actual_estimators": 50,
+      "train_accuracy": 0.9583333333333334,
+      "validation_accuracy": 0.4125,
+      "clean_test_accuracy": 0.3625,
+      "corrupted_test_accuracy": 0.2625,
+      "last_learner_weight": 2.936934324001924,
+      "last_weighted_error": 0.6740647257422624
+    },
+    {
+      "max_depth": 4,
+      "n_estimators": 100,
+      "actual_estimators": 100,
+      "train_accuracy": 0.9958333333333333,
+      "validation_accuracy": 0.4375,
+      "clean_test_accuracy": 0.45,
+      "corrupted_test_accuracy": 0.2,
+      "last_learner_weight": 2.9514537498659985,
+      "last_weighted_error": 0.6708667604178958
+    }
+  ],
+  "best_config": {
+    "max_depth": 4,
+    "n_estimators": 100,
+    "actual_estimators": 100,
+    "train_accuracy": 0.9958333333333333,
+    "validation_accuracy": 0.4375,
+    "clean_test_accuracy": 0.45,
+    "corrupted_test_accuracy": 0.2,
+    "last_learner_weight": 2.9514537498659985,
+    "last_weighted_error": 0.6708667604178958
+  }
+}
