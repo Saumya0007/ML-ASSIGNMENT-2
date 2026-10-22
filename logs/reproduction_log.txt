@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261022155433
+Username: DESKTOP-RMNPUMO\SAUMYADIP
+RunAs User: DESKTOP-RMNPUMO\SAUMYADIP
+Configuration Name: 
+Machine: DESKTOP-RMNPUMO (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\SAUMYADIP\AppData\Local\Programs\Microsoft VS Code\6d62b1d5da\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 21672
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\logs\reproduction_log.txt
+ML Assignment 2 reproduction log
+Date: 10/22/2026 15:54:33
+Python version:
+
+Installed packages:
+
+Git commit:
+
+Saved result files:
+bagging.json
+bagging_depth_bias_variance.csv
+bagging_depth_bias_variance.json
+bias_variance.json
+bias_variance_exact.csv
+bias_variance_exact.json
+bias_variance_resamples.csv
+boosting.json
+boosting_dynamics.csv
+boosting_grid_search.json
+boosting_grid_search_previous.json
+error_analysis.json
+q1c_diagnostics_table.tex
+q1d_face_examples.csv
+q2c_dynamics.csv
+q2c_d_summary.json
+q2c_high_weight_face_history.csv
+q2d_selected_models.csv
+q2d_single_face_example.csv
+q2d_single_face_example.json
+q2_prediction_disagreements.csv
+q2_samme_high_weight_examples.csv
+q3a_bias_variance_summary.csv
+q3b_checkpoint.npz
+q3b_depth_comparison_summary.csv
+q3d_final_comparison.csv
+q3_depth_bagging_improvements.csv
+q3_depth_single_and_bagging.csv
+samme_corrected_dynamics.csv
+samme_corrected_summary.json
+samme_predictions_100.npz
+samme_predictions_25.npz
+samme_predictions_50.npz
+samme_q2b_all_round_dynamics.csv
+samme_q2b_grid.csv
+samme_q2b_summary.json
+samme_trace.json
+split.npz
+tree_baseline.json
+**********************
+Windows PowerShell transcript end
+End time: 20261022155434
+**********************
