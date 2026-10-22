@@ -1,9 +1,11 @@
-# ML Assignment 2 — Reproduction Instructions
+# ML Assignment 2 - Reproduction Instructions
 
 ## Environment
+
 - Python 3.13.4
-- Package versions are recorded in `library_versions.txt`.
-- Saved experiment outputs and the data split are in `results/`.
+- Package versions: `library_versions.txt`
+- Data split: `results/split.npz`
+- Saved experiment outputs and figures: `results/`
 
 ## Setup
 
@@ -15,18 +17,34 @@ python -m venv .venv
 python -m pip install numpy matplotlib scikit-learn
 ```
 
-## Reproduction
+## Reproduction commands
 
-The experiment scripts are located in `src/`. Run the required scripts from the repository root in the order needed by their dependencies. For example, inspect each script before rerunning it because some scripts regenerate saved results or require existing checkpoints.
+Run commands from the repository root.
+
+The following commands use the saved data split and generate the baseline model outputs:
 
 ```powershell
-python .\src\data_setup.py
+python .\src\tree_baseline.py
 python .\src\bagging.py
 python .\src\boosting.py
 ```
 
-Additional analysis and figure-generation scripts are also available in `src/`. The saved split, experiment outputs, and checkpoints are stored in `results/`.
+Generate the baseline comparison figures:
 
-## Log
+```powershell
+python .\src\make_figures.py
+```
 
-The environment and saved-result inventory are recorded in `logs/reproduction_log.txt`.
+Additional scripts for bias-variance analysis, SAMME, error analysis, and figures are available in `src/`. Consult each script before running it to identify required input files and avoid overwriting saved outputs or checkpoints.
+
+## Saved artifacts
+
+- `results/split.npz` - saved train, validation, and test split
+- `results/` - saved metrics, experiment outputs, checkpoints, CSV files, and figures
+- `src/` - experiment and plotting scripts
+- `library_versions.txt` - recorded package versions
+- `logs/reproduction_log.txt` - environment and saved-result inventory
+
+## Log scope
+
+The committed log records the environment and saved-result inventory. It is not a record of a complete clean rerun of every experiment.
